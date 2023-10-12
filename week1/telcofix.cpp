@@ -26,13 +26,18 @@ int main()
     cin.tie(NULL);
     int total = 0;
     string line;
+   
+
+    ifstream inputFile;
+    inputFile.open("telco.txt"); 
+
 
     unordered_map<string, int> CountPhone; // sử dụng cấu trúc dữ liệu hashmap dạng <key, value> để lưu trữ số cuộc gọi của 1 số điên thoại
     unordered_map<string, int> Total_time; // sử dụng cấu trúc dữ liệu hashmap dạng <key, value> để lưu trữ tổng thời gian của 1 số điên thoại
     bool yes = true; // biến trạng thái của "số phone có hợp lệ hay không"
 
     // đọc dữ liệu ở block 1
-    while (getline(cin, line) && line != "#")
+    while (getline(inputFile, line) && line != "#")
     {
         total++;
 
@@ -59,7 +64,7 @@ int main()
     }
 
     // đọc và xử lý thông tin ở block 2
-    while (getline(cin, line) && line != "#")
+    while (getline(inputFile, line) && line != "#")
     {
         size_t pos = line.find(' ');
         string cmd = line.substr(0, pos);
