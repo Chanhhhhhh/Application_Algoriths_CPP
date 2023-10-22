@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "f:/thuattoanungdung/week1",
-      "program": "f:/thuattoanungdung/week1/build/Debug/outDebug",
+      "cwd": "f:/tailieuBK/20231/thuattoanungdung_lab/week2",
+      "program": "f:/tailieuBK/20231/thuattoanungdung_lab/week2/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
